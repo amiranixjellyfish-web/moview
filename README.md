@@ -37,17 +37,30 @@
 ---
 
 ## 🎨 Дизайн и UI/UX
-* **Макет в Figma:** [Ссылка на дизайн-макет](https://www.figma.com/community/file/1657082759949476109)
+* **Макет в Figma:** [дизайн-макет](https://www.figma.com/community/file/1657082759949476109)
 ---
 
 ## 🛠 Технологический стек (Tech Stack)
 
-* **Frontend:** React.js / Next.js, TypeScript, Tailwind CSS (или Styled Components).
-* **Backend:** Node.js (Express) / Python (FastAPI / Django).
-* **Database:** PostgreSQL (для пользователей и фильмов), Redis (для кэширования поиска и сессий).
-* **Авторизация:** JWT (JSON Web Tokens) / OAuth 2.0 (вход через Google/GitHub).
-* **Инфраструктура:** Docker, GitHub Actions (CI/CD), Vercel/Render (Деплой).
+### **Backend (Серверная часть)**
+* **Runtime:** Node.js (LTS)
+* **Framework:** Express.js
+* **Language:** TypeScript
+* **ORM:** Prisma
 
+### **Database (Хранение данных)**
+* **DBMS:** PostgreSQL
+
+### **Frontend (Интерфейс)**
+* **Library:** React.js
+* **Build Tool:** Vite
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+
+### **Infrastructure & Tools (Инфраструктура)**
+* **Containerization:** Docker / Docker Compose
+* **API Testing:** Postman / Thunder Client
+* **Version Control:** Git / GitHub
 ---
 
 ## 🏃‍♂️ Как запустить проект локально (Getting Started)
