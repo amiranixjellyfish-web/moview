@@ -58,8 +58,8 @@
 * **Styling:** Tailwind CSS
 
 ### **Infrastructure & Tools (Инфраструктура)**
-* **Containerization:** Docker Compose
-* **API Testing:** Thunder Client
+* **Containerization:** Docker
+* **API Testing:** Postman
 * **Version Control:** Git / GitHub
 ---
 
