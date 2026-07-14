@@ -1,6 +1,9 @@
 # Moview
 ## 🗺 Этапы разработки (Roadmap)
 
+[![Project Status: In Development](https://img.shields.io/badge/Project%20Status-In%20Development-yellow.svg)]((https://github.com/amiranixjellyfish-web/moview))
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 ### 🟢 Этап 1: Базовая версия (MVP)
 **Цель:** Собрать работающий каркас сайта, где есть пользователи, каталог и оценки.
 - [ ] Развернуть структуру проекта (папки `/client` и `/server`).
@@ -23,3 +26,47 @@
 - [ ] Список «Посмотреть позже» (закладки).
 - [ ] Создание своих подборок фильмов (публичных или приватных).
 - [ ] Подписки на других авторов и лента их активности.
+
+---
+
+## 📌 О проекте (Concept & Purpose)
+
+**Зачем нужен этот проект?**
+В мире ежедневно выходят десятки фильмов и сериалов. Пользователям сложно ориентироваться в этом потоке, а также находить качественные, честные отзывы. Данная платформа предоставляtn удобный инструмент для структурирования личного опыта просмотров и обмена мнениями.
+
+---
+
+## 🎨 Дизайн и UI/UX
+* **Макет в Figma:** [дизайн-макет](https://www.figma.com/community/file/1657082759949476109)
+---
+
+## 🛠 Технологический стек (Tech Stack)
+
+### **Backend (Серверная часть)**
+* **Runtime:** Node.js (LTS)
+* **Framework:** Express.js
+* **Language:** TypeScript
+* **ORM:** Prisma
+
+### **Database (Хранение данных)**
+* **DBMS:** PostgreSQL
+
+### **Frontend (Интерфейс)**
+* **Library:** React.js
+* **Build Tool:** Vite
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+
+### **Infrastructure & Tools (Инфраструктура)**
+* **Containerization:** Docker
+* **API Testing:** Postman
+* **Version Control:** Git / GitHub
+---
+
+## 🏃‍♂️ Как запустить проект локально (Getting Started)
+
+### Требования (Prerequisites)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+### Установка
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
