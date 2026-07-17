@@ -14,7 +14,7 @@ a {
 img {
     max-width: 100%;
 }
-
+Я
 .nav li,button {
   display: inline-block;
   font-size: 18px;
@@ -111,4 +111,12 @@ img {
 .login-btn:hover {
   background-color: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.4);
+}
+.site-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #0b0b0d;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
