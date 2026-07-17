@@ -4,33 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moview</title>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="wraper">
 <!--     <script type="module" src="/src/main.tsx"></script> -->
-      <header class="container">
-        <span class="logo">кадр</span>
-        <nav>
-          <ul>
-            <li><a href="#">фильмы</a></li>
-            <li><a href="#">сериалы</a></li>
-            <li><a href="#">рецензии</a></li>
-            <li><a href="#">обсуждения</a></li>
-            <li><a href="#">списки</a></li>
-            <li class="btn"><a href="#">войти</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header class="site-header">
+    <div class="header-container">
+    <!-- Левая часть: Логотип -->
+      <div class="logo">КАДР</div>
 
-      <div class="hero container">
-        <div class="hero--info"
-        <h2>Фильм недели</h2>
-        <h1>Брюталист</h1>
-        <p>The Brutalist, 2024</p>
-        <p>Эпическая история венгерского архитектора-еврея Ласло Тота, пережившего Холокост и эмигрировавшего в Америку в надежде воплотить своё видение красоты в хаотичном послевоенном мире. Монументальное иссл…</p>
-        <button class="btn">Читать рецензию</button> 
-        <button class="btn">Обсудить</button> 
+    <!-- Средняя часть: Навигация -->
+      <nav class="navigation">
+        <a href="#" class="nav-link">ФИЛЬМЫ</a>
+        <a href="#" class="nav-link">СЕРИАЛЫ</a>
+        <a href="#" class="nav-link">РЕЦЕНЗИИ</a>
+        <a href="#" class="nav-link">ОБСУЖДЕНИЯ</a>
+        <a href="#" class="nav-link">СПИСКИ</a>
+      </nav>
+
+    <!-- Правая часть: Поиск и Войти -->
+      <div class="actions">
+        <button class="search-btn">
+        <!-- Простая SVG иконка лупы -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      <a href="#" class="login-btn">Войти</a>
       </div>
     </div>
+  </header>
+
   </body>
 </html>
