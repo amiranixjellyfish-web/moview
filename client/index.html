@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moview</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
 <!--     <script type="module" src="/src/main.tsx"></script> -->
@@ -33,6 +36,65 @@
     </div>
   </header>
   <ul><li>1</li><li>1</li><li>1</li><li>1</li><li>1</li><li>1</li><li>1</li><li>1</li><li>1</li><li>1</li><li>1</li><li>1</li></ul>
+ <!-- ОСНОВНАЯ ЧАСТЬ (MAIN) -->
+    <main>
+
+        <!-- ГЕРОЙ-СЕКЦИЯ (HERO SECTION) -->
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    
+                    <p class="film-week-label">ФИЛЬМ НЕДЕЛИ</p>
+                    
+                    <h1 class="film-title-ru">Бруталист</h1>
+                    <p class="film-title-en">The Brutalist, 2024</p>
+                    
+                    <div class="rating-block">
+                        <span class="rating-value">9.1</span>
+                        <div class="rating-stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <span class="rating-count">4 821 оценка</span>
+                    </div>
+                    
+                    <p class="film-description">
+                        Эпическая история венгерского архитектора-еврея Ласло Тота, пережившего Холокост и эмигрировавшего в Америку в надежде воплотить своё видение красоты в хаотичном послевоенном мире. Монументальное иссл...
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn-primary">Читать рецензию</button>
+                        <button class="btn btn-secondary">Обсудить</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ ФИЛЬТРОВ (GENRE FILTER) -->
+        <section class="filter-section">
+            <div class="container filter-container">
+                <button class="filter-btn active">Все</button>
+                <button class="filter-btn">Драма</button>
+                <button class="filter-btn">История</button>
+                <button class="filter-btn">Романтика</button>
+                <button class="filter-btn">Комедия</button>
+                <button class="filter-btn">Фантастика</button>
+                <button class="filter-btn">Приключения</button>
+                <button class="filter-btn">Ужасы</button>
+                <button class="filter-btn">Готика</button>
+                <button class="filter-btn">Триллер</button>
+                <button class="filter-btn">Боди-хоррор</button>
+                <button class="filter-btn">Сатира</button>
+                <button class="filter-btn">Анимация</button>
+                <button class="filter-btn">Биография</button>
+            </div>
+        </section>
+
+    </main>
   <footer class="site-footer">
     <div>
       <div class="logo">КАДР</div>
