@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fdfdfd;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+Я
+.nav li,button {
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.site-header {
+  background-color: rgba(15, 15, 17, 0.9); /* Темный цвет с небольшой прозрачностью */
+  backdrop-filter: blur(5px); /* Размытие заднего плана (опционально) */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Едва заметная нижняя граница */
+  position: fixed; /* Чтобы хедер оставался наверху при скролле */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Ограничивающий контейнер, чтобы контент не разъезжался на ультрашироких экранах */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 70px; /* Высота шапки */
+  display: flex;
+  align-items: center; /* Выравнивание всех элементов по вертикали */
+  justify-content: space-between; /* Распределяет лево, центр и право */
+}
+
+/* 1. Логотип */
+.logo {
+  color: #d4a373; /* Благородный золотистый/песочный цвет */
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* 2. Навигация */
+.navigation {
+  display: flex;
+  gap: 30px; /* Расстояние между ссылками */
+}
+
+.nav-link {
+  color: #a6a6a6; /* Сероватый цвет текста, как на скрине */
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+/* Эффект при наведении на пункты меню */
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* 3. Блок справа (Поиск + Войти) */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Кнопка поиска (лупа) */
+.search-btn {
+  background: none;
+  border: none;
+  color: #a6a6a6;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.search-btn:hover {
+  color: #ffffff;
+}
+
+/* Кнопка "Войти" */
+.login-btn {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Тонкая полупрозрачная рамка */
+  border-radius: 4px; /* Слегка скругленные углы */
+  transition: all 0.2s ease;
+}
+
+/* Эффект при наведении на кнопку Войти */
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.site-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #0b0b0d;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+/* --- БАЗОВЫЕ СТИЛИ (RESET) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000; /* Черный фон по умолчанию */
+    color: #ffffff; /* Белый текст */
+    font-family: 'Inter', sans-serif; /* Основной шрифт */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Ограничивающий контейнер */
+.container {
+    max-width: 1300px; /* Вы можете настроить ширину под себя */
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* --- ГЕРОЙ-СЕКЦИЯ (HERO) --- */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* Секция занимает 80% высоты экрана */
+    background-image: url('image_4a1561.jpg'); /* Путь к фону */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; /* Центрируем контент по вертикали */
+}
+
+/* Затемняющий оверлей поверх изображения */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный цвет */
+    z-index: 1;
+}
+
+/* Контент поверх оверлея */
+.hero-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 600px; /* Ограничиваем ширину текста */
+}
+
+/* Стилизация текста */
+.film-week-label {
+    color: #d2b48c; /* Светло-коричневый/золотистый цвет */
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.film-title-ru {
+    font-family: 'Playfair Display', serif; /* Шрифт с засечками */
+    font-size: 72px; /* Очень большой размер */
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.film-title-en {
+    color: #a0a0a0; /* Серый текст */
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Стилизация рейтинга */
+.rating-block {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Промежутки между элементами */
+    margin-bottom: 30px;
+}
+
+.rating-value {
+    color: #d2b48c; /* Золотистый */
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 2px;
+    color: #d2b48c; /* Золотистый для звезд */
+}
+
+.star.filled {
+    font-size: 14px;
+}
+
+.rating-count {
+    color: #a0a0a0;
+    font-size: 12px;
+}
+
+.film-description {
+    color: #dfdfdf;
+    font-size: 15px;
+    line-height: 1.6; /* Улучшает читаемость */
+    margin-bottom: 40px;
+}
+
+/* Стилизация кнопок */
+.hero-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #d2b48c; /* Золотистая кнопка */
+    color: #1a1a1a;
+}
+
+.btn-primary:hover {
+    background-color: #f0e68c; /* Легкий эффект наведения */
+}
+
+.btn-secondary {
+    background-color: transparent; /* Прозрачная кнопка */
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Тонкая рамка */
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- СЕКЦИЯ ФИЛЬТРОВ (GENRE) --- */
+.filter-section {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Едва заметная линия */
+}
+
+.filter-container {
+    display: flex;
+    justify-content: flex-start; /* Выравнивание кнопок по левому краю */
+    flex-wrap: wrap; /* Позволяет кнопкам переноситься на новую строку */
+    gap: 10px; /* Промежутки между кнопками */
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #0a0a0a; /* Очень темный фон */
+    color: #909090; /* Серый текст */
+    border: 1px solid #1a1a1a; /* Темная рамка */
+    border-radius: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    color: #ffffff;
+    border-color: #3a3a3a;
+}
+
+/* Стиль для активной кнопки (золотая рамка) */
+.filter-btn.active {
+    border-color: #d2b48c; /* Золотая рамка */
+    color: #ffffff;
+    background-color: #101010;
+}
