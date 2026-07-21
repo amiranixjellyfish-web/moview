@@ -1,16 +1,33 @@
 services:
-#  server:
-#  client:
   db:
     image: postgres:16.0
     container_name: moview_db
+    restart: always
+    env_file:
+      - ./server/.env
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_USER: ${DB_USER}
       POSTGRES_DB: ${DB_NAME}
     ports:
-      - 5432:5432
+      - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+
+  server:
+    build:
+      context: ./server
+    container_name: moview_server
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    env_file:
+      - ./server/.env
+    depends_on:
+      - db
+
 volumes:
   pgdata:
